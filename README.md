@@ -1,6 +1,4 @@
 # wowFun
-Site vitrine Fictif
-
   
 ## Bienvenue sur 🔥 Renaissance 🔥
 
@@ -10,7 +8,7 @@ Explorez, les classe et les mystères d'Azeroth à travers des videos et images 
 
 Voila une petite expérience centrée  sur le monde World of Warcraft.
 
-![Capture d'écran de mon projet]()
+![Capture d'écran de mon projet](./images/readm.png)
 
 
 
