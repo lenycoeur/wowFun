@@ -18,7 +18,7 @@ Voila une petite expérience centrée  sur le monde World of Warcraft.
 
 Pour ceux qui souhaitent explorer le code :
 
-01. Clonez le dépôt : git clone https://github.com/votreutilisateur/chroniques-du-monde-d-azeroth.git
+01. Clonez le dépôt : git clone https://github.com/lenycoeur/wowFun.git
 02.  Exploitez la puissance de Node.js : npm install
 03. Libérez le site en mode développement : npm start
 
