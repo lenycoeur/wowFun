@@ -15,13 +15,14 @@ body {
 .containHead {
   position: relative;
   overflow: hidden;
+  width: 100%;
   height: 100vh;
   background-color: rgb(0, 0, 0);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.571), 0 10px 10px rgba(0, 0, 0, 0.203);
 }
 
 .he {
-  height: 93%;
+  height: 100%;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -49,6 +50,7 @@ body {
 
 .text_overlay_head {
   width: 500px;
+  height: auto;
   display: flex;
   position: absolute;
   top: 45%;
@@ -541,7 +543,7 @@ footer {
   /*///middle///*/
 
   .midl {
-    height: 100vh;
+    height: 1000px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -632,8 +634,15 @@ footer {
     font-size: 12px;
   }
 
+    .text_overlay_head .butfoo  {
+    width: 20
+    
+  }
+
+
+
   .butfoo button {
-    margin-right: 0px !important;
+    margin-right: 300px !important;
     font-size: 10px;
   }
 
@@ -688,7 +697,7 @@ footer {
   /*///MIDDLE/////*/
 
   .midl {
-    height: 100vh;
+    height: 1000px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -822,14 +831,11 @@ footer {
     font-size: 13px;
   }
 
-  .butfoo {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+ 
+
   .butfoo button {
-    margin-right: 0px !important;
+    margin-right: 330px !important;
+    font-size: 10px;
   }
 
   /*FOOTER*/
@@ -863,20 +869,17 @@ footer {
   /*MIDDLE*/
 
   .midl {
-    height: 100vh;
+    height: 1000px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     position: relative;
     margin-bottom: 10px;
   }
 
-  .midl::after {
-    bottom: 0;
-    background: linear-gradient(to top, #191826, rgba(0, 0, 0, 0));
-  }
+ 
 
   .aly {
     width: 100%;
@@ -887,6 +890,14 @@ footer {
   .logoclass p {
     font-size: 10px !important;
   }
+
+  .logoclass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
+}
 
   .titre {
     width: 100%;
@@ -908,13 +919,14 @@ footer {
   }
 
   .content-div {
-    width: 200px;
+    width: 100%;
+    height: auto;
     text-align: center;
   }
 
   .content-image {
-    width: 200px;
-    height: 300px;
+    width: 100% ;
+    height: auto;
     object-fit: cover;
   }
 
@@ -978,6 +990,13 @@ footer {
 
   }
 
+   .butfoobis {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .butfoo {
     width: 100%;
     display: flex;
@@ -1022,15 +1041,6 @@ footer {
 
   /*TOPPPPPP*/
 
-  .containHead {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(0, 0, 0);
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.571),
-      0 10px 10px rgba(0, 0, 0, 0.203);
-  }
 
   .he {
     width: 100%;
@@ -1043,17 +1053,6 @@ footer {
     align-items: center;
   }
 
-  .he::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 20px;
-    background: linear-gradient(to bottom, rgb(0 0 0 / -10%) 0%, black 100%);
-    pointer-events: none;
-  }
-
   .he video {
     width: 100%;
     height: 100%;
@@ -1063,7 +1062,8 @@ footer {
   }
 
   .text_overlay_head {
-    width: 200px;
+    width: 100%;
+    height: auto;
     display: flex;
     position: absolute;
     top: 45% !important;
@@ -1078,12 +1078,12 @@ footer {
   .text_overlay_head p {
     color: rgba(255, 255, 255, 0.552);
     text-shadow: 1px 1px 2px black;
-    font-size: 15px !important;
+    font-size: 10px !important;
     text-align: center;
   }
 
   .text_overlay_head h2 {
-    font-size: 15px !important;
+    font-size: 13px !important;
     font-weight: 400;
     color: white;
     text-transform: uppercase;
@@ -1092,14 +1092,16 @@ footer {
   }
 
   .btn {
-    padding: 10px;
-    width: 160px;
+    padding: 7px;
+    width: 120px;
     border: 2px solid orange;
     border-radius: 25px;
     background-color: #ffffff00;
     font-weight: bold;
     color: #fff;
     text-align: center;
+    font-size: 10px;
+    overflow: hidden;
     margin: 0px;
     cursor: url(../images/Pointer\ hoverclick.webp), auto;
   }
