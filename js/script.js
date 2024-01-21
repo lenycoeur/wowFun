@@ -1,29 +1,4 @@
 
-
-
-const imageContainers = document.querySelectorAll('.content-image');
-
-imageContainers.forEach((container) => {
-  container.addEventListener('mousemove', (e) => {
-    const mouseX = e.clientX;
-    const mouseY = e.clientY;
-    const containerRect = container.getBoundingClientRect();
-    const centerX = containerRect.width / 10;
-    const centerY = containerRect.height / 10;
-    const moveX = (mouseX - containerRect.left - centerX) / 50; 
-    const moveY = (mouseY - containerRect.top - centerY) / 50; 
-
-    container.style.transform = `translate(${moveX}px, ${moveY}px) rotateX(${moveY}deg) rotateY(${moveX}deg)`;
-  });
-
-  container.addEventListener('mouseleave', () => {
-    container.style.transform = 'translate(0px, 0px) rotateX(0deg) rotateY(0deg)';
-  });
-});
-
-
-
-
 const icons = document.querySelectorAll('.icon');
 const contentImages = document.querySelectorAll('.content-image');
 const contentTexts = document.querySelectorAll('.content-text');
@@ -45,6 +20,18 @@ icons.forEach((icon) => {
 if (defaultIcon) {
   defaultIcon.click();
 }
+
+
+
+const burgerIcon = document.querySelectorAll('.burger-button i')
+const burgerButton = document.querySelector('.burger-button');
+const burgerMenu = document.querySelector('.burger-menu');
+
+burgerButton.onclick = function () {
+    burgerMenu.classList.toggle('openmenu')
+    const isOpen = burgerMenu.classList.contains('openmenu')
+    burgerIcon.classList = isOpen ? "fas fa-xmark" : "fas fa-bars";
+  }
 
 
 
