@@ -12,6 +12,8 @@ body {
   box-sizing: border-box;
 }
 
+
+
 .containHead {
   position: relative;
   overflow: hidden;
@@ -89,6 +91,18 @@ body {
   cursor: url(../images/Pointer\ hoverclick.webp), auto;
 }
 
+.btnfoot {
+  padding: 15px;
+  width: 200px;
+  border: 2px solid orange;
+  border-radius: 25px;
+  background-color: #ffffff00;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  cursor: url(../images/Pointer\ hoverclick.webp), auto;
+}
+
 .btn:hover {
   background: #dd842ba8;
 }
@@ -101,10 +115,11 @@ body {
   background-color: rgba(0, 0, 0, 0.37);
   z-index: 1;
   border-radius: 5px;
-  width: 90%;
+  width: 100%;
   height: 60px;
-  padding-left: 0;
-  margin-left: 5%;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
 }
@@ -204,11 +219,11 @@ a {
   height: 100vh;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   background-repeat: no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.418), rgb(0, 0, 0)),url('../images/allm.jpg') center/cover;
-
+  gap: 5%  ;
 
 }
 
@@ -262,10 +277,12 @@ a {
 
 .global_bloc {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  gap: 2% ;
   height: 1000px;
   background-color: #38383810;
+  
 }
 
 .game {
@@ -273,8 +290,6 @@ a {
   width: 350px;
   height: 400px;
   border-radius: 5px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 20px rgba(75, 75, 75, 0.594);
 }
 
 .game img {
@@ -285,7 +300,7 @@ a {
   top: 0;
   left: 0;
   object-fit: cover;
-  transition: opacity 1s ease;
+  transition: opacity 0.1s;
 }
 
 .game video {
@@ -297,7 +312,7 @@ a {
   opacity: 0;
   object-fit: cover;
   pointer-events: none;
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.1s, transform 0.7s;
 }
 
 .game:hover video {
@@ -307,10 +322,6 @@ a {
   overflow: hidden;
 }
 
-.game:hover img {
-  transform: scale(1.1);
-  transition: transform 1s ease;
-}
 
 .tt {
   position: absolute;
@@ -348,10 +359,11 @@ a {
 
 .contain_fo {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 750px;
+  gap: 5%;
 }
 
 .foo {
@@ -520,6 +532,7 @@ footer {
 
   .burger-menu {
     display: none !important;
+    
   }
 
   .text_overlay_head {
@@ -577,7 +590,6 @@ footer {
   }
 
   .game {
-    margin: 10px;
     width: 50%;
   }
 
@@ -634,10 +646,7 @@ footer {
     font-size: 12px;
   }
 
-    .text_overlay_head .butfoo  {
-    width: 20
-    
-  }
+
 
 
 
@@ -652,7 +661,7 @@ footer {
   }
 
   .fun img {
-    width: 80%;
+    width: 100%;
     height: 50%;
   }
 }
@@ -669,7 +678,7 @@ footer {
   }
 
   .burger-menu {
-    display: none;
+    display: none !important;
   }
 
   /*/////TOPPP/////*/
@@ -809,7 +818,6 @@ footer {
   }
 
   .game {
-    margin: 10px;
     width: 220px;
   }
 
@@ -831,10 +839,17 @@ footer {
     font-size: 13px;
   }
 
+     .butfoo {
+    width: 107%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
  
 
-  .butfoo button {
-    margin-right: 330px !important;
+  .foo button {
+    margin-right: 30px !important;
     font-size: 10px;
   }
 
@@ -857,6 +872,21 @@ footer {
         text-size-adjust: 100%;
         height: auto;
   }
+
+  .burger-button{
+    display: block !important;
+    text-align: center;
+    margin-top: 7px;
+    color: rgba(255, 166, 0, 0.716);
+    width: auto;
+    height: auto;
+  }
+
+  .fa-solid {
+    font-size: 40px;
+ 
+  }
+
   .burger-menu {
     display: none;
   }
@@ -865,6 +895,12 @@ footer {
   .secondary_menub {
     display: none;
   }
+
+  .containHead {
+  width: 100%;
+  height: 600px;
+
+}
 
   /*MIDDLE*/
 
@@ -940,7 +976,7 @@ footer {
 
   .contain_fo {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: 750px;
@@ -958,18 +994,16 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
+    width: 100%;
+    height: 1000px;
   }
 
   .game {
-    margin: 10px;
-    width: 290px;
+    width: 150px;
+    height: 270px;
+    overflow: hidden;
   }
 
-  .game img {
-    width: 100%;
-    height: auto;
-  }
   .foo {
     width: 100%;
     height: auto;
@@ -986,6 +1020,7 @@ footer {
     text-align: center;
     font-size: 12px;
      color: rgb(246, 198, 147);
+     overflow: hidden;
 
 
   }
@@ -995,6 +1030,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
   }
 
   .butfoo {
@@ -1002,6 +1038,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
   }
   .butfoo button {
     margin-right: 0px !important;
@@ -1017,18 +1054,17 @@ footer {
     height: auto;
   }
 
-   .global_bloc .tt {
-    width: 100%;
-  }
+
 
   .tt img {
     width: 100%;
     height: 50%;
-    margin-top: 70px;
+    margin-top: 40px;
+ 
   }
 
   .tekal {
-    margin-top: 25% !important;
+    margin-top: 40px !important;
   }
 
   .ttt {
@@ -1107,27 +1143,26 @@ footer {
   }
 
 
-  #menubar {
-    display: flex;
-    position: absolute;
-    box-sizing: border-box;
-    justify-content: space-around;
-    background-color: rgba(0, 0, 0, 0.37);
-    z-index: 1;
-    border-radius: 5px;
-    width: 90%;
-    height: 60px;
-    padding-left: 0;
-    margin-left: 5%;
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-  }
+ #menubar {
+  display: flex;
+  position: absolute;
+  box-sizing: border-box;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.37);
+  z-index: 1;
+  border-radius: 5px;
+  width: 100%;
+  height: 60px;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
 
   .inav {
-    display: flex;
-    align-items: center;
     color: rgb(239, 204, 140);
-    font-size: 27px;
+    font-size: 20px;
   }
 
   .inav img {
@@ -1135,10 +1170,20 @@ footer {
     height: auto;
   }
 
+  .inav a {
+    display: none;
+  }
+
+  
+
   /*FOOTER*/
 
   .ftxx {
     text-align: center;
+  }
+
+  .ftxx {
+    font-size: 8px !important;
   }
 
   #footsection {
@@ -1146,5 +1191,30 @@ footer {
   height: 800px;
 
 }
-
 }
+
+@media (max-width: 170px){
+  .img_absolute{
+    width: 100%;
+  }
+
+  .fun img{
+    display: none;
+  }
+}
+
+@media (max-width: 100px){
+  .inav img {
+    width: 20px;
+  }
+
+  .fa-solid{
+    font-size: 10px;
+    margin-top: 17px;
+  }
+
+  .fun img{
+    display: none;
+  }
+}
+
