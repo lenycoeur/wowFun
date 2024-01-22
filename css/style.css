@@ -12,8 +12,6 @@ body {
   box-sizing: border-box;
 }
 
-
-
 .containHead {
   position: relative;
   overflow: hidden;
@@ -143,24 +141,6 @@ body {
   order: 0;
 }
 
-    .burger-menu {
-      display: none;
-      position: absolute;
-      top: 70px;
-      right: 5%;
-      background-color: #5151516f;
-      border-radius: 10px;
-      display: flex;
-      flex-direction: column; /* Ajustement pour le menu vertical */
-      align-items: center;
-      text-align: center;
-    }
-
-.openmenu{
-  display: block;
-}
-
-
 nav ul li :hover {
   color: rgb(231, 153, 8);
 }
@@ -220,7 +200,6 @@ nav ul ul li:hover {
 a {
   text-decoration: none;
   font-weight: bold;
-  font-size: 1rem;
   color: rgb(255, 153, 0);
   cursor: url(../images/Pointer\ hoverclick.webp), auto;
 }
@@ -232,12 +211,10 @@ a {
   justify-content: center;
   align-items: center;
   background-repeat: no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.418), rgb(0, 0, 0)),url('../images/allm.jpg') center/cover;
-  gap: 5%  ;
-
+  background: linear-gradient(rgba(0, 0, 0, 0.418), rgb(0, 0, 0)),
+    url("../images/allm.jpg") center/cover;
+  gap: 5%;
 }
-
-
 
 .aly {
   width: 450px;
@@ -277,7 +254,6 @@ a {
   background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
 }*/
 
-
 .title_mid {
   text-align: center;
   font-size: 30px;
@@ -289,10 +265,9 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2% ;
+  gap: 2%;
   height: 1000px;
   background-color: #38383810;
-  
 }
 
 .game {
@@ -311,6 +286,7 @@ a {
   left: 0;
   object-fit: cover;
   transition: opacity 0.1s;
+  overflow: hidden;
 }
 
 .game video {
@@ -323,6 +299,7 @@ a {
   object-fit: cover;
   pointer-events: none;
   transition: opacity 0.1s, transform 0.7s;
+  overflow: hidden;
 }
 
 .game:hover video {
@@ -331,7 +308,6 @@ a {
   border-radius: 5px;
   overflow: hidden;
 }
-
 
 .tt {
   position: absolute;
@@ -348,24 +324,22 @@ a {
 .ttt {
   width: 100%;
   position: absolute;
-  height: 550px;
+  height: 575px;
   display: flex;
   align-items: flex-end;
-  text-align: justify;
-  letter-spacing: normal;
   color: rgba(255, 255, 255, 0.491);
-  font-size: 14px;
-}
-
+  font-size: 13px;
+  padding: 5px;
+  text-align: justify;
+  }
 
 #footsection {
   width: 100%;
   height: 800px;
-  background: linear-gradient(rgba(0, 0, 0, 0.418), rgb(0, 0, 0)),url('../images/paysa.jpeg') center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.418), rgb(0, 0, 0)),
+    url("../images/paysa.jpeg") center/cover;
   background-repeat: no-repeat;
 }
-
-
 
 .contain_fo {
   display: flex;
@@ -381,13 +355,12 @@ a {
   height: 200px;
 }
 
-.ti  {
+.ti {
   font-size: 2em;
   color: rgb(255, 255, 255);
   margin-top: 0;
   margin-bottom: 20px;
   text-transform: uppercase;
-
 }
 
 .tex {
@@ -488,12 +461,7 @@ footer {
   transition: filter 0.5s ease-in-out;
   cursor: url(../images/Pointer\ hoverclick.webp), auto;
 }
-/*
-.bg-2{
-    background-repeat:no-repeat;
-    background-image:url(../images/stylmag-removebg-preview.png);
-    
-}*/
+
 
 .bg-1 {
   height: 455px;
@@ -531,29 +499,25 @@ footer {
   color: rgb(255, 166, 181);
 }
 
-
 @media (min-width: 1160px) {
   .burger-menu {
     display: none !important;
   }
 
-  .burger-button{
+  .burger-button {
     display: none !important;
   }
 }
 @media (max-width: 1160px) {
-
-  body{
-        text-size-adjust: 100%;
-
+  body {
+    text-size-adjust: 100%;
   }
 
   .burger-menu {
     display: none !important;
-    
   }
 
-  .burger-button{
+  .burger-button {
     display: none;
   }
 
@@ -611,6 +575,11 @@ footer {
     height: 1000px;
   }
 
+  .bloc3 .ttt{
+    width: 100%;
+    height: 550px !important;
+  }
+
   .game {
     width: 50%;
   }
@@ -627,7 +596,7 @@ footer {
     width: 100%;
   }
 
-  .tekal{
+  .tekal {
     margin-top: 55% !important;
   }
 
@@ -637,7 +606,6 @@ footer {
     margin-top: 50%;
   }
 
- 
   .ttt {
     width: 100%;
     display: flex;
@@ -645,7 +613,7 @@ footer {
     text-align: justify;
   }
 
-  /*///FOOTSCTION//*/
+  /*///FOOTSECTION//*/
   .contain_fo {
     padding: 20px;
     display: flex;
@@ -654,30 +622,26 @@ footer {
     height: 750px;
   }
 
-   .foo {
+  .foo {
     width: 50%;
     height: 250px;
   }
 
-  .ti p{
+  .ti p {
     font-size: 2em;
   }
 
-  .tex{
+  .tex {
     width: 80%;
     font-size: 12px;
   }
-
-
-
-
 
   .butfoo button {
     margin-right: 300px !important;
     font-size: 10px;
   }
 
-  .fun{
+  .fun {
     text-align: center;
     width: 100%;
   }
@@ -693,10 +657,8 @@ footer {
 /*////TABLETTE/////*/
 
 @media (max-width: 955px) {
-
-  body{
-        text-size-adjust: 100%;
-
+  body {
+    text-size-adjust: 100%;
   }
 
   .burger-menu {
@@ -776,8 +738,6 @@ footer {
     font-size: 12px;
   }
 
-
-
   .imglo {
     width: 60px;
     height: 60px;
@@ -799,15 +759,13 @@ footer {
     height: 200px;
   }
 
-
-
   .tex {
     width: 100%;
     font-size: 15px;
     color: rgb(246, 198, 147);
   }
 
-  .ti{
+  .ti {
     font-size: 19px !important;
   }
 
@@ -836,18 +794,20 @@ footer {
     width: 100%;
     height: 50%;
     margin-top: 100px;
-    
   }
 
   .game {
     width: 220px;
   }
 
+    .bloc3 .ttt{
+      width: 100%;
+    height: 570px !important;
+  }
+
   .tekal {
     margin-top: 51% !important;
   }
-
- 
 
   .ttt {
     width: 100%;
@@ -861,14 +821,12 @@ footer {
     font-size: 13px;
   }
 
-     .butfoo {
+  .butfoo {
     width: 107%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-
- 
 
   .foo button {
     margin-right: 30px !important;
@@ -889,13 +847,13 @@ footer {
 /*//////MOBILE///////*/
 
 @media (max-width: 700px) {
-
-  body{
-        text-size-adjust: 100%;
-        height: auto;
+  
+  body {
+    text-size-adjust: 100%;
+    height: auto;
   }
 
-  .burger-button{
+  .burger-button {
     display: block !important;
     text-align: center;
     margin-top: 7px;
@@ -907,23 +865,22 @@ footer {
 
   .fas {
     font-size: 40px;
- 
   }
 
   .burger-menu {
-  display: none;
-  position: absolute;
-  top: 70px;
-  right: 5%;
-  background-color: #5151516f;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 5%;
+    background-color: #5151516f;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
-  .burger-menu .openmenu{
+  .openmenu {
     display: block !important;
   }
 
@@ -933,23 +890,21 @@ footer {
 
   .fa-angle-right {
     font-size: 15px !important;
-   
   }
 
   #un {
-   left: -100px !important;
+    left: -100px !important;
     top: 0 !important;
-}
+  }
 
   .primary_menu {
     display: none;
   }
 
   .containHead {
-  width: 100%;
-  height: 600px;
-
-}
+    width: 100%;
+    height: 600px;
+  }
 
   /*MIDDLE*/
 
@@ -964,8 +919,6 @@ footer {
     margin-bottom: 10px;
   }
 
- 
-
   .aly {
     width: 100%;
     height: 150px;
@@ -977,12 +930,12 @@ footer {
   }
 
   .logoclass {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0;
+  }
 
   .titre {
     width: 100%;
@@ -1010,7 +963,7 @@ footer {
   }
 
   .content-image {
-    width: 100% ;
+    width: 100%;
     height: auto;
     object-fit: cover;
   }
@@ -1053,28 +1006,32 @@ footer {
     overflow: hidden;
   }
 
+   .bloc3 .ttt{
+    height: 267px !important;
+  }
+
+
   .foo {
     width: 100%;
     height: auto;
   }
 
-  .ti  {
-  color: rgb(255, 255, 255) !important;
-  margin-top: 0;
-  overflow: hidden;
-}
- 
+
+
+  .ti {
+    color: rgb(255, 255, 255) !important;
+    margin-top: 0;
+    overflow: hidden;
+  }
 
   .tex p {
     text-align: center;
     font-size: 12px;
-     color: rgb(246, 198, 147);
-     overflow: hidden;
-
-
+    color: rgb(246, 198, 147);
+    overflow: hidden;
   }
 
-   .butfoobis {
+  .butfoobis {
     width: 100%;
     display: flex;
     align-items: center;
@@ -1093,23 +1050,20 @@ footer {
     margin-right: 0px !important;
   }
 
-  .fun{
+  .fun {
     width: 100%;
     height: auto;
   }
 
-  .fun img{
+  .fun img {
     max-width: 90%;
     height: auto;
   }
 
-
-
   .tt img {
     width: 100%;
-    height: 50%;
+    height: 47%;
     margin-top: 40px;
- 
   }
 
   .tekal {
@@ -1117,7 +1071,18 @@ footer {
   }
 
   .ttt {
-    display: none !important;
+    width: 100%;
+    height: inherit;
+    font-size: 5px;
+    padding: 5px;
+  }
+
+  .ttt a {
+    font-size: 6px;
+  }
+
+  .ttt .fa-angle-right {
+    font-size: 6px !important;
   }
 
   h3 {
@@ -1125,7 +1090,6 @@ footer {
   }
 
   /*TOPPPPPP*/
-
 
   .he {
     width: 100%;
@@ -1191,23 +1155,22 @@ footer {
     cursor: url(../images/Pointer\ hoverclick.webp), auto;
   }
 
-
- #menubar {
-  display: flex;
-  position: absolute;
-  box-sizing: border-box;
-  justify-content: space-around;
-  background-color: rgba(0, 0, 0, 0.37);
-  z-index: 1;
-  border-radius: 5px;
-  width: 100%;
-  height: 60px;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
-}
+  #menubar {
+    display: flex;
+    position: absolute;
+    box-sizing: border-box;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.37);
+    z-index: 1;
+    border-radius: 5px;
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+  }
 
   .inav {
     color: rgb(239, 204, 140);
@@ -1223,8 +1186,6 @@ footer {
     display: none;
   }
 
-  
-
   /*FOOTER*/
 
   .ftxx {
@@ -1236,34 +1197,32 @@ footer {
   }
 
   #footsection {
-  width: 100%;
-  height: 800px;
-
+    width: 100%;
+    height: 800px;
+  }
 }
-}
 
-@media (max-width: 170px){
-  .img_absolute{
+@media (max-width: 170px) {
+  .img_absolute {
     width: 100%;
   }
 
-  .fun img{
+  .fun img {
     display: none;
   }
 }
 
-@media (max-width: 100px){
+@media (max-width: 100px) {
   .inav img {
     width: 20px;
   }
 
-  .fa-solid{
+  .fa-solid {
     font-size: 10px;
     margin-top: 17px;
   }
 
-  .fun img{
+  .fun img {
     display: none;
   }
 }
-
