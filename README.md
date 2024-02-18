@@ -14,8 +14,6 @@ Voila une petite expérience centrée  sur le monde World of Warcraft.
 
 </br>
 
-## Techno Utilisé
-
 ## Pour les Développeurs
 
 Pour ceux qui souhaitent explorer le code :
