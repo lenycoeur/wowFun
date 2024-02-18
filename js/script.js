@@ -34,6 +34,8 @@ burgerButton.onclick = function () {
   burgerIcon.className = isOpen ? "fas fa-xmark" : "fas fa-bars";
 };
 
-
+window.onload = function ( ) {
+  burgerMenu.classList.remove('openmenu');
+};
 
 
