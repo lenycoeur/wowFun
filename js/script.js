@@ -22,8 +22,6 @@ if (defaultIcon) {
 }
 
 
-
-
 const burgerIcon = document.querySelector(".burger-button i");
 const burgerButton = document.querySelector(".burger-button");
 const burgerMenu = document.querySelector(".burger-menu");
